@@ -8,7 +8,6 @@ import numpy as np
 from datetime import datetime
 import calendar
 import plotly.express as px
-#import plotly.graph_objs as go
 from tabelas_graficos import base_dec_polo_enel, base_fec_polo_enel, base_meta_dec_aneel_polos, base_meta_fec_aneel_polos
 from tabelas_graficos import base_dec, base_fec
 from tabelas_graficos import base_meta_aneel_conjuntos, base_conjuntos
@@ -62,7 +61,7 @@ with st.sidebar:
 
 
 # Filtros
-lista_ano = ['24', '23']
+lista_ano = ['24'] #, '23']
 lista_polos = ['Campos', 'Lagos', 'Macaé', 'Magé', 'Niterói', 'Noroeste', 'São Gonçalo', 'Serrana', 'Sul']
 
 
