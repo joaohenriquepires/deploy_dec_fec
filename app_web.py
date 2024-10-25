@@ -224,7 +224,7 @@ if selected == 'Enel Rio':
             font=dict(size=12),
             xanchor='center', 
             yanchor='bottom') for index, row in totais_por_mes_polos_dec.iterrows()])
-    graf_dec_polos.add_scatter(x=base_dec_polos_transformado['Polos'], y=totais_por_mes_polos_dec['Meta DEC Ano'], mode="lines+markers+text", name="Meta DEC", line=dict(color="white", dash="dash"), text=totais_por_mes_polos_dec['Meta DEC Ano'], textposition="top center", textfont=dict(color='white'))
+    graf_dec_polos.add_scatter(x=base_dec_polos_transformado['Polos'], y=totais_por_mes_polos_dec['Meta DEC Ano'], mode="lines+markers+text", name="Meta DEC", line=dict(color="black", dash="dash"), text=totais_por_mes_polos_dec['Meta DEC Ano'], textposition="top center", textfont=dict(color='black'))
 
 
     graf_fec_polos = px.bar(base_fec_polos_transformado, x='Polos', y='FEC', color='Meses', title='FEC', width=430, height=400)
@@ -246,7 +246,7 @@ if selected == 'Enel Rio':
             font=dict(size=12),
             xanchor='center', 
             yanchor='bottom') for index, row in totais_por_mes_polos_fec.iterrows()])
-    graf_fec_polos.add_scatter(x=base_fec_polos_transformado['Polos'], y=totais_por_mes_polos_fec['Meta FEC Ano'], mode="lines+markers+text", name="Meta FEC", line=dict(color="white", dash="dash"), text=totais_por_mes_polos_fec['Meta FEC Ano'], textposition="top center", textfont=dict(color='white'))
+    graf_fec_polos.add_scatter(x=base_fec_polos_transformado['Polos'], y=totais_por_mes_polos_fec['Meta FEC Ano'], mode="lines+markers+text", name="Meta FEC", line=dict(color="black", dash="dash"), text=totais_por_mes_polos_fec['Meta FEC Ano'], textposition="top center", textfont=dict(color='black'))
 
     col3.plotly_chart(graf_dec_polos)
     col4.plotly_chart(graf_fec_polos)
@@ -431,7 +431,7 @@ if selected == 'Polos - YTD':
             font=dict(size=12),
             xanchor='center', 
             yanchor='bottom') for index, row in totais_por_mes_dec.iterrows()])
-    graf_dec_conjuntos.add_scatter(x=df_transformado_dec['Conjunto'], y=totais_por_mes_dec['Meta DEC'], mode="lines+markers+text", name="Meta DEC", line=dict(color="white", dash="dash"), text=totais_por_mes_dec['Meta DEC'], textposition="top center", textfont=dict(color='white'))
+    graf_dec_conjuntos.add_scatter(x=df_transformado_dec['Conjunto'], y=totais_por_mes_dec['Meta DEC'], mode="lines+markers+text", name="Meta DEC", line=dict(color="black", dash="dash"), text=totais_por_mes_dec['Meta DEC'], textposition="top center", textfont=dict(color='black'))
 
     graf_fec_conjuntos = px.bar(df_transformado_fec, x='Conjunto', y='FEC', color='Mês', title='FEC YTD', width=430)
     graf_fec_conjuntos.update_layout(
@@ -452,7 +452,7 @@ if selected == 'Polos - YTD':
             font=dict(size=12),
             xanchor='center', 
             yanchor='bottom') for index, row in totais_por_mes_fec.iterrows()])
-    graf_fec_conjuntos.add_scatter(x=df_transformado_fec['Conjunto'], y=totais_por_mes_fec['Meta FEC'], mode="lines+markers+text", name="Meta FEC", line=dict(color="white", dash="dash"), text=totais_por_mes_fec['Meta FEC'], textposition="top center", textfont=dict(color='white'))
+    graf_fec_conjuntos.add_scatter(x=df_transformado_fec['Conjunto'], y=totais_por_mes_fec['Meta FEC'], mode="lines+markers+text", name="Meta FEC", line=dict(color="black", dash="dash"), text=totais_por_mes_fec['Meta FEC'], textposition="top center", textfont=dict(color='black'))
 
     col1.plotly_chart(graf_dec_conjuntos)
     col2.plotly_chart(graf_fec_conjuntos)
@@ -685,7 +685,7 @@ if selected == 'Polos - LTM':
             font=dict(size=12),
             xanchor='center', 
             yanchor='bottom') for index, row in totais_por_mes_dec.iterrows()])
-    graf_dec_conjuntos.add_scatter(x=df_transformado_dec['Conjunto'], y=totais_por_mes_dec['Meta DEC'], mode="lines+markers+text", name="Meta DEC", line=dict(color="white", dash="dash"), text=totais_por_mes_dec['Meta DEC'], textposition="top center", textfont=dict(color='white'))
+    graf_dec_conjuntos.add_scatter(x=df_transformado_dec['Conjunto'], y=totais_por_mes_dec['Meta DEC'], mode="lines+markers+text", name="Meta DEC", line=dict(color="black", dash="dash"), text=totais_por_mes_dec['Meta DEC'], textposition="top center", textfont=dict(color='black'))
 
     graf_fec_conjuntos = px.bar(df_transformado_fec, x='Conjunto', y='FEC', color='Mês', title='FEC LTM 2024', width=430)
     graf_fec_conjuntos.update_layout(
@@ -706,7 +706,7 @@ if selected == 'Polos - LTM':
             font=dict(size=12),
             xanchor='center', 
             yanchor='bottom') for index, row in totais_por_mes_fec.iterrows()])
-    graf_fec_conjuntos.add_scatter(x=df_transformado_fec['Conjunto'], y=totais_por_mes_fec['Meta FEC'], mode="lines+markers+text", name="Meta FEC", line=dict(color="white", dash="dash"), text=totais_por_mes_fec['Meta FEC'], textposition="top center", textfont=dict(color='white'))
+    graf_fec_conjuntos.add_scatter(x=df_transformado_fec['Conjunto'], y=totais_por_mes_fec['Meta FEC'], mode="lines+markers+text", name="Meta FEC", line=dict(color="black", dash="dash"), text=totais_por_mes_fec['Meta FEC'], textposition="top center", textfont=dict(color='black'))
 
     col1.plotly_chart(graf_dec_conjuntos)
     col2.plotly_chart(graf_fec_conjuntos)
