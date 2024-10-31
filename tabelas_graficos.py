@@ -4,7 +4,13 @@ import warnings
 import locale
 
 warnings.filterwarnings('ignore')
-locale.setlocale(locale.LC_TIME, 'pt_BR') #'pt_BR.UTF-8' 'en_US.UTF-8' 'pt_BR'
+#locale.setlocale(locale.LC_TIME, 'pt_BR') #'pt_BR.UTF-8' 'en_US.UTF-8' 'pt_BR'
+try:
+    locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
+except locale.Error:
+    # Tenta configurar um locale alternativo ou padrão do sistema
+    locale.setlocale(locale.LC_TIME, 'pt_BR' if locale.getlocale()[0] else '')
+
 
 #usuario = os.getlogin()
 #diretorio = f'C:\\Users\\{usuario}\\OneDrive - NTT DATA EMEAL\\Escritorio\\PEM_NPEM DEC-FEC\\'
