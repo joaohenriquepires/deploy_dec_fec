@@ -4,7 +4,7 @@ import warnings
 import locale
 
 warnings.filterwarnings('ignore')
-locale.setlocale(locale.LC_TIME, 'en_US.UTF-8') #'pt_BR.UTF-8' 'en_US.UTF-8' 'pt_BR'
+locale.setlocale(locale.LC_TIME, '') #'pt_BR.UTF-8' 'en_US.UTF-8' 'pt_BR'
 # try:
 #     locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
 # except locale.Error:
