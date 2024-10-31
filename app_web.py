@@ -6,7 +6,6 @@ from streamlit_option_menu import option_menu    # menu para sidebar do streamli
 import pandas as pd
 import numpy as np
 from datetime import datetime
-import locale
 import calendar
 import plotly.express as px
 from tabelas_graficos import base_dec_polo_enel, base_fec_polo_enel, base_meta_dec_aneel_polos, base_meta_fec_aneel_polos
@@ -32,8 +31,6 @@ with st.sidebar:
 
         # titulo
         'Menu',
-
-        print("Locale atual:", locale.getlocale())
 
         # opções de navegação
         ['Enel Rio', 'Polos - YTD', 'Polos - LTM', 'Conjuntos', 'Listagem Conjuntos'],
